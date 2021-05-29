@@ -1,0 +1,26 @@
+.mainvisual{
+  background: url(../image/mainvisual.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  &_inner{
+    height: 100%;
+    position: relative;
+  }
+
+  &__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $white;
+    font-weight: $font-bold;
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.25;
+
+    @include mq(sp){
+      font-size: 8rem;
+    }
+  }
+}

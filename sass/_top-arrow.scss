@@ -1,0 +1,29 @@
+.top-arrow{
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  border: 1px solid $black;
+  color: $black;
+  cursor: pointer;
+  font-size: 18px;
+
+  &:hover{
+    border-radius: 50%;
+    transition: .1s;
+  }
+
+  @include mq(tab){
+    right: 30px;
+  }
+
+  @include mq(sp){
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    right: 20px;
+  }
+}

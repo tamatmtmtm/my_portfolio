@@ -1,0 +1,87 @@
+// レイアウト幅
+$layout-width-inner: 1200px;
+
+//マップ型変数breakpointsを定義
+// ブレークポイント
+$breakpoints: (
+"sp": "screen and (max-width: 767px)",
+"tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+"pc": "screen and (min-width: #{$layout-width-inner})",
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: md) {
+//map-get(マップ型変数, キー)で値を取得
+@media #{map-get($breakpoints, $breakpoint)} {
+//この中をカスタムできる
+@content;
+}
+}
+
+// font-family
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Roboto:wght@300;700&display=swap');
+
+$font-bold: bold;
+$white: #fff;
+$black: #333;
+$gray_bg: #f5f5f5;
+
+/*=========
+  共通
+==========*/
+@import "common";
+
+/*=========
+  header
+==========*/
+@import "header";
+
+/*================
+  hamburger-menu
+=================*/
+@import "hamburger-menu";
+
+/*================
+  drawer-menu
+=================*/
+@import "drawer-menu";
+
+/*===========
+  mainvisual
+============*/
+@import "mainvisual";
+
+/*===========
+  about
+============*/
+@import "about";
+
+/*===========
+  service
+============*/
+@import "service";
+
+/*===========
+  flow
+============*/
+@import "flow";
+
+/*===========
+  work
+============*/
+@import "work";
+
+/*=========
+  contact
+==========*/
+@import "contact";
+
+/*=========
+  top-arrow
+==========*/
+@import "top-arrow";
+
+/*=========
+  footer
+==========*/
+@import "footer";

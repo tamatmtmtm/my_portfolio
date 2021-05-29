@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="玉川樹のポートフォリオサイトです。">
+  <meta property="og:url" content="https://tatsukitamagawa-portfolio.net/">
+  <meta property="og:title" content="玉川樹のポートフォリオ">
+  <meta property="og:description" content="玉川樹のポートフォリオサイトです。">
+  <meta property="og:image" content="https://tatsukitamagawa-portfolio.net/image/portfolio-ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- スタイルCSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- WOW.jsのcss -->
+  <link rel="stylesheet" href="./css/animate.css">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/b300b98791.js" crossorigin="anonymous"></script>
+
+  <title>玉川樹のポートフォリオ</title>
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="inner header_inner">
+      <h1 class="header__title"><a class="link header__link" href="#">Portfolio</a></h1>
+      <!-- PC -->
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#about" class="link header__nav-link">About</a></li>
+          <li class="header__nav-item"><a href="#service" class="link header__nav-link">Service</a></li>
+          <li class="header__nav-item"><a href="#flow" class="link header__nav-link">Flow</a></li>
+          <li class="header__nav-item"><a href="#work" class="link header__nav-link">Work</a></li>
+          <li class="header__nav-item"><a href="#contact" class="link header__nav-link">Contact</a></li>
+        </ul><!--/.nav__list-->
+      </nav><!--/.nav-->
+
+      <!-- SP -->
+      <div class="hamburger-menu">
+        <span class="bar bar_top"></span>
+        <span class="bar bar_middle"></span>
+        <span class="bar bar_bottom"></span>
+      </div><!--/.hamburger-menu-->
+      <nav class="drawer-menu">
+        <ul class="drawer-menu__list">
+          <li class="drawer-menu__item"><a href="#about" class="link drawer-menu__link">About</a></li>
+          <li class="drawer-menu__item"><a href="#service" class="link drawer-menu__link">Service</a></li>
+          <li class="drawer-menu__item"><a href="#flow" class="link drawer-menu__link">Flow</a></li>
+          <li class="drawer-menu__item"><a href="#work" class="link drawer-menu__link">Work</a></li>
+          <li class="drawer-menu__item"><a href="#contact" class="link drawer-menu__link">Contact</a></li>
+        </ul><!--/.drawer-menu__list-->
+      </nav><!--/.drawer-menu-->
+    </div><!--/.inner-->
+  </header><!--/.header-->
+
+  <!-- mainvisual -->
+  <section class="mainvisual">
+    <div class="inner mainvisual_inner">
+      <p class="mainvisual__text">Welcome to <br> My Portfolio</p>
+    </div>
+  </section>
+
+  <!-- main -->
+  <main>
+    <!-- about -->
+    <section class="section about" id="about">
+      <div class="inner">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__content">
+          <div class="about__img wow fadeInUp" data-wow-duration="3s"><img src="./image/about.jpg" alt="プロフィール画像"></div>
+          <div class="about__text wow fadeInRight" data-wow-duration="4s">
+            <p class="about__text-name">玉川　樹</p>
+            <p class="about__text-profile">
+              埼玉県出身。<br>
+              2020年5月にWeb制作の勉強を始める。<br>
+              HTML・CSS・JaveScript(jQuery)・WordPressを学んでいる。<br>
+              お客様にご満足していただけるサイトを制作するために、日々精進しています。
+            </p>
+          </div><!--/.about__text-->
+        </div><!--/.about__content-->
+      </div><!--/.inner-->
+    </section><!--/.about-->
+
+    <!-- service -->
+    <section class="section service" id="service">
+      <div class="inner">
+        <h2 class="section__title">Service</h2>
+        <div class="service__content wow fadeInUp" data-wow-duration="4s">
+          <table class="service__table">
+            <tbody>
+              <tr class="service__table-row">
+                <th class="service__table-title">LP制作 <br> <span class="service__table_important service__table-price">30,000</span>円〜</th>
+              </tr>
+              <tr class="service__table-row">
+                <td class="service__table-content service__table-deadline">納期目安 <br> <span class="service__table_important">3週間</span>以内</td>
+              </tr>
+              <tr class="service__table-row">
+                <td class="service__table-content">デザイン / コーディング込み</td>
+              </tr>
+              <tr class="service__table-row">
+                <td class="service__table-content">レスポンシブ対応</td>
+              </tr>
+              <tr class="service__table-row">
+                <td class="service__table-content">Googleアナリティクス設定</td>
+              </tr>
+              <tr class="service__table-row">
+                <td class="service__table-content">簡易お問い合わせフォーム設置</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!--/.service__content-->
+      </div><!--/.inner-->
+    </section><!--/.service-->
+
+    <!-- flow -->
+    <section class="section flow" id="flow">
+      <div class="inner">
+        <h2 class="section__title">Flow</h2>
+        <div class="flow__content wow fadeInUp" data-wow-duration="4s">
+          <div class="flow__item">
+            <dl class="flow__item-list">
+              <dd class="flow__item-icon"><i class="fas fa-tasks"></i></dd>
+              <dt class="flow__item-title">1. ヒアリング</dt>
+              <dd>
+                <p class="flow__item-text">
+                  「ホームページは欲しいけど、よく分からない...」とお悩みの方。初めての方でもわかりやすいヒアリングシートをご用意しております。ご遠慮なくご相談ください。
+                </p>
+              </dd>
+            </dl>
+          </div><!--/.flow__item-->
+          <div class="flow__item">
+            <dl class="flow__item-list">
+              <dd class="flow__item-icon"><i class="far fa-edit"></i></dd>
+              <dt class="flow__item-title">2. デザイン</dt>
+              <dd>
+                <p class="flow__item-text">
+                  ヒアリングした項目を元に、200以上のテンプレートの中から、お客様にあったデザインをご提案します。３案までご提案いたしますので、お好きなものをお選びください。
+                </p>
+              </dd>
+            </dl>
+          </div><!--/.flow__item-->
+          <div class="flow__item">
+            <dl class="flow__item-list">
+              <dd class="flow__item-icon"><i class="fas fa-code"></i></dd>
+              <dt class="flow__item-title">3. コーディング</dt>
+              <dd>
+                <p class="flow__item-text">
+                  選んでいたデザインでコーディングしていきます。LPに利用するテキスト・写真素材等をご準備ください。
+                </p>
+              </dd>
+            </dl>
+          </div><!--/.flow__item-->
+        </div><!--/.flow__content-->
+      </div><!--/.inner-->
+    </section><!--/.flow-->
+
+    <!-- work -->
+    <section class="section work" id="work">
+      <div class="inner">
+        <div class="work__title">
+          <h2 class="section__title">Work</h2>
+          <p class="work__sub-title">画像をクリックすると制限のかかったサイトへ移動します。</p>
+        </div>
+        <div class="work__content">
+          <div class="work__item wow fadeInUp" data-wow-duration="4s">
+            <div class="work__item-info">
+              <p class="work__item-title">デイトラ様　制作課題</p>
+              <p class="work__item-message">摸写コーディングです。<br>
+                HTML,Sass,WordPress
+              </p>
+              <p class="work__item-login">ログインID：work1work1work1<br>パスワード：bgakigah435</p>
+            </div>
+            <div class="work__item-img">
+              <a href="https://my-portfolio-work1.site/" target="_blank"><img src="./image/work1.jpg" alt="制作実績の画像①"></a>
+            </div>
+          </div><!--/.work__item-->
+          <div class="work__item wow fadeInUp" data-wow-duration="4s">
+            <div class="work__item-info">
+              <p class="work__item-title">JavaScriptポートフォリオ</p>
+              <p class="work__item-message">JavaScriptをメインに使用しました。<br>おみくじや四択クイズなどを実装しました。<br>
+                HTML,Sass,JavaScript
+              </p>
+              <p class="work__item-login">ログインID：work2work2work2<br>パスワード：tpd873283pdptw</p>
+            </div>
+            <div class="work__item-img">
+              <a href="https://my-portfolio-work2.com" target="_blank"><img src="./image/work2.jpg" alt="制作実績の画像②"></a>
+            </div>
+          </div><!--/.work__item-->
+          <div class="work__item wow fadeInUp" data-wow-duration="4s">
+            <div class="work__item-info">
+              <p class="work__item-title">忍者CODE様　制作課題</p>
+              <p class="work__item-message">JavaScriptの屋敷。<br>
+              ECサイトの摸写コーディングです。<br>
+              HTML,Sass,jQuery
+              </p>
+              <p class="work__item-login">ログインID：work3work3work3<br>パスワード：niabni948tu7</p>
+            </div>
+            <div class="work__item-img">
+              <a href="https://my-portfolio-work3.com" target="_blank"><img src="./image/work3.jpg" alt="制作実績の画像③"></a>
+            </div>
+          </div><!--/.work__item-->
+        </div><!--/.work__content-->
+      </div><!--/.inner-->
+    </section><!--/.work-->
+
+    <!-- contact -->
+    <section class="section contact" id="contact">
+      <div class="inner">
+        <h2 class="section__title">Contact</h2>
+        <form id="js-form" class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSco7Xp6A71ipR5GkwSADRnM8P0g2IdJxVha9ToAyJf7OfPsgA/formResponse" method="POST">
+          <dl class="form__list wow fadeInUp" data-wow-duration="4s">
+            <div class="form__item">
+              <dt class="form__item-title input-title">お名前</dt>
+              <dd class="form__item-input"><input name="entry.203524462" type="text" placeholder="山田　太郎" required></dd>
+            </div><!--/.form__item-->
+            <div class="form__item">
+              <dt class="form__item-title input-title">メールアドレス</dt>
+              <dd class="form__item-input"><input name="entry.312730301" type="email" placeholder="example@example.com" required></dd>
+            </div><!--/.form__item-->
+            <div class="form__item">
+              <dt class="form__item-title textarea-title">内容</dt>
+              <dd class="form__item-input"><textarea name="entry.1315066681" id="" required></textarea></dd>
+            </div><!--/.form__item-->
+          </dl><!--/.form__list-->
+          <div class="form__btn wow fadeInUp" data-wow-duration="4s">
+            <button type="submit">送信する</button>
+          </div>
+        </form>
+        <div id="js-success" class="contact-message">
+          送信完了しました。ありがとうございました。
+        </div>
+        <div id="js-error" class="contact-message contact-error">
+          送信に失敗しました。ページを更新して再度送信してください。
+        </div>
+      </div><!--/.inner-->
+    </section><!--/.contact-->
+
+  </main><!--/main-->
+
+  <!-- top-arrow -->
+  <div class="top-arrow">↑</div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <p class="copyright"><small>© Copyright | Tatsuki Tamagawa All Right Reserved</small></p>
+  </footer><!--/.footer-->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/wow.min.js"></script>
+  <script src="./js/slick.js"></script>
+
+  <script>
+    // WOW.js
+    new WOW().init();
+
+    // メニュー
+    $(function(){
+      // .mainvisualクラスがついた要素の高さを取得
+      let mainvisual = jQuery(".mainvisual").innerHeight();
+      // .headerクラスがついた要素の高さを取得
+      let header = jQuery(".header").innerHeight();
+      $(window).scroll(function(){
+        if($(this).scrollTop() > mainvisual - header ){
+          $(".header").css('background-color', 'rgba(26,26,51)');
+        } else{
+          $(".header").css("background-color", "transparent");
+        }
+      });
+    });
+
+    // ハンバーガーメニュー・ドロワーメニュー
+    $(function () {
+      // $(".drawer-menu").hide(); //非表示
+
+      $('.hamburger-menu').click(function () {
+        $(".hamburger-menu").toggleClass("close"); //#bar-boxにclose1というクラスを追加
+        $('.drawer-menu').toggleClass('drawer-menu_js');
+      });
+    });
+
+    $(function(){
+      $('.drawer-menu__link').click(function(){
+        $('.drawer-menu').removeClass('drawer-menu_js');
+        $(".hamburger-menu").removeClass("close"); 
+      });
+    });
+
+    // タイトルボタンクリック
+    $(function(){
+      $(".header__title").click(function(){
+        $('body,html').animate({scrollTop: 0}, 700); //クリックするとトップへスクロール　0.5秒で
+        return false;
+      });
+    });
+
+    //メニュークリックスムーズ移動
+    // #から始まるURLがクリックされた時(メニューの高さを引く場合)
+    jQuery('a[href^="#"]').click(function() {
+      // .headerクラスがついた要素の高さを取得
+      let header = jQuery(".header").innerHeight();
+      let speed = 300;
+      let id = jQuery(this).attr("href");
+      let target = jQuery("#" == id ? "html" : id);
+      // トップからの距離からヘッダー分の高さを引く
+      let position = jQuery(target).offset().top - header;
+      // その分だけ移動すればヘッダーと被りません
+      jQuery("html, body").animate(
+      {
+        scrollTop: position
+      },
+      speed
+      );
+      return false;
+    });
+    
+    // ページトップボタン制御
+    $(function(){
+      $(".top-arrow").hide(); //トップページ非表示
+
+      $(window).scroll(function(){
+        if($(this).scrollTop() > 200 ){ //スクロールが100より大きい場合
+          $(".top-arrow").fadeIn(); //フェードイン
+        } else{
+          $(".top-arrow").fadeOut(); //フェードアウト 
+        }   
+      });
+
+      $(".top-arrow").click(function(){
+        $('body,html').animate({scrollTop: 0}, 700); //クリックするとトップへスクロール　0.5秒で
+        return false;
+      });
+    });
+
+    // お問い合わせ
+    let $form = $('#js-form');
+    $form.submit(function(e) { 
+    $.ajax({ 
+        url: $form.attr('action'), 
+        data: $form.serialize(), 
+        type: "POST", 
+        dataType: "xml", 
+        statusCode: { 
+          0: function() { 
+            //送信に成功したときの処理 
+            $form.slideUp();
+            $('#js-success').slideDown();
+          }, 
+          200: function() { 
+            //送信に失敗したときの処理 
+            $form.slideUp();
+            $('#js-error').slideDown();
+          }
+        } 
+      });
+      event.preventDefault();
+      return false; 
+    }); 
+  </script>
+
+  
+</body>
+</html>

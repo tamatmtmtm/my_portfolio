@@ -1,0 +1,54 @@
+.hamburger-menu{
+  display: none;
+}
+
+@include mq(sp){
+  .hamburger-menu{
+    display: block;
+    position: fixed;
+    right: 25px;
+    top: 16.2px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $white;
+    cursor: pointer;
+  }
+
+  .bar{
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: $white;
+    border-radius: 4px;
+    transition: ease 0.4s;
+  
+    &_top{
+      top: 30%;
+  
+      .close &{
+        transform: translateX(-50%) rotate(45deg);
+        top: 43%;
+      }
+    }
+  
+    &_middle{
+      top: 50%;
+  
+      .close &{
+        opacity: 0;
+        transition: 0.1s;
+      }
+    }
+  
+    &_bottom{
+      top: 70%;
+  
+      .close &{
+        transform: translateX(-50%) rotate(-45deg);
+        top: 43%;
+      }
+    }
+  }
+}

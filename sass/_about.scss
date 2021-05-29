@@ -1,0 +1,52 @@
+.about{
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq(sp){
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img{
+    width: 350px;
+    height: auto;
+
+    @include mq(sp){
+      margin-bottom: 4rem;
+      width: 200px;
+    }
+
+    & img{
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      display: block;
+    }
+  }
+
+  &__text{
+    width: 100%;
+    max-width: 400px;
+    margin-left: 4.1666667%;
+    padding: 3rem;
+    background-color: rgba($color: #f0f0f0, $alpha: .6);
+    border-radius: 8px;
+
+    @include mq(sp){
+      margin-left: 0;
+      font-size: 2.8rem;
+    }
+
+    &-name{
+      font-size: 2.2rem;
+      font-weight: $font-bold;
+      margin-bottom: 2rem;
+
+      @include mq(sp){
+        font-size: 3.6rem;
+      }
+    }
+  }
+}
